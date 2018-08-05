@@ -55,7 +55,7 @@ Controller will automatically realize this interface.
 Interestingly, the key on deciding the WHERE clause of SQL query is the method name.  
 The format is like: `findOneByQid()`, `findAllByCategory()`. Springboot JPA will  
 resolve the method name automatically and generate the query statement. You can  
-use an instance of the entity class to receive a single result. If it is a result set, 
+use an instance of the entity class to receive a single result. If it is a result set,  
 use Page<> to receive the result set. Don't forget to pass a `pageable` object to the  
 function to meet the requirement.
 ***
