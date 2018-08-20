@@ -41,14 +41,14 @@ property. `Many` is the class in which you use this annonation. And `One` is the
 *that the usage of this annonation is still confusing on me. Its usage on mathods,*  
 *columns and entities can all be foun don the Internet, and I only managed to get*  
 *the last one to work.)* `fetch_type` could be `FetchType.EAGER` or `FetchType.LAZY` .  
-`EAGER` means loading the data on query, while `LAZY` means laoding on usage (may save  
+`EAGER` means loading the data on query, while `LAZY` means loading on usage (may save  
 server's resources).  
 `@JoinColumn(name = "your_column_name")` defines the column in database which  
 you are to use as the forengn key.
 
 > `***Repo.kt`
 
-`@Repository` annonation tells Springboot JPA that this is a interface for querying  
+`@Repository` annonation tells Springboot JPA that this is an interface for querying  
 data via database.  
 Your interface should inherit JpaRepository<>. `@Autowired` annonation used in the  
 Controller will automatically realize this interface.  
